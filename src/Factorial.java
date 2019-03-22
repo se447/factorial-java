@@ -11,21 +11,21 @@ public class Factorial {
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Type a number: ");
-        int number = Integer.parseInt(reader.nextLine());
-        
+        int number = Integer.parseInt(reader.nextLine()); //number we will take factorial of
         int factorial = 1;
+        
         
         if (number == 0) {
             factorial = 1;
         }
         
         int i = 1;
-        while (i < number) {
-            factorial *= i * (i+1);
+        while (i <= number) {
+            factorial = factorial * i;
             i++;
         }
         
-        
         System.out.println("Factorial is " + factorial);
+        
     }
 }
